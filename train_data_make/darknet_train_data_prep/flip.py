@@ -71,8 +71,7 @@ def gen_xml(xml_name):
 
 def do_flip(path):
     xml_names = scan_files(path, postfix=".xml")
-    #executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
-    executor = ProcessPoolExecutor(1)
+    executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
     tasks = []
     for xml_name in xml_names:
         tasks.append(executor.submit(flip, xml_name))
@@ -82,7 +81,7 @@ def do_flip(path):
     for future in as_completed(tasks):
         job_count -= 1
         print("One Job Done, last Job Count: {}".format(job_count))
-    
+
 if __name__ == "__main__":
     path = ""
     do_rotate(path)
