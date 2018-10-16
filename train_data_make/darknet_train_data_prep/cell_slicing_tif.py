@@ -230,7 +230,7 @@ def get_windows_new(labels, size_x, size_y, size):
 
 
     
-def cell_sampling(xml_file, save_path, path_temp, size):
+def cell_sampling(xml_file, tiff_path, save_path, size):
     
 #    print("#INFO# ", "start cp file")
 
@@ -243,22 +243,17 @@ def cell_sampling(xml_file, save_path, path_temp, size):
 
     labels = get_labels(xml_file)
 
-    filename = os.path.splitext(xml_file)[0]
-    if (not os.path.isfile(filename+".tif")) and (not os.path.isfile(filename+".kfb")):
-        print(filename + " doesn't exist")
-        return
+    # filename = os.path.splitext(xml_file)[0]
+    # if (not os.path.isfile(filename+".tif")) and (not os.path.isfile(filename+".kfb")):
+    #     print(filename + " doesn't exist")
+    #     return
+
+    print("PROCESSING %s ..." % tiff_path)
+
     try:
-        slide = openslide.OpenSlide(filename+".tif")
+        slide = openslide.OpenSlide(tiff_path)
     except:
-        slide = TSlide(filename+".kfb")
-
-    # print pic info
-
-    if (os.path.isfile(filename+".tif")):
-        print("#INFO# ", "big pic name is ", filename + ".tif")
-
-    if (os.path.isfile(filename+".kfb")):
-        print("#INFO# ", "big pic name is ", filename + ".kfb")
+        slide = TSlide(tiff_path)
 
     size_x, size_y = slide.dimensions
 #    points_xy = get_windows(labels, size_x, size_y, size)
@@ -276,7 +271,11 @@ def cell_sampling(xml_file, save_path, path_temp, size):
         if ((i % 100) == 0):
             print("# process # ", i, '/', points_num - 1, x, y, size, size)
         cell = slide.read_region((x, y), 0, (size, size)).convert("RGB")
-        cell.save(save_path + "/" + os.path.basename(filename) + "_" + str(x) + "_" + str(y) + ".jpg")
+
+        filename, _ = os.path.splitext(os.path.basename(tiff_path))
+        image_file_name = save_path + "/" + filename + "_" + str(x) + "_" + str(y) + ".jpg"
+
+        cell.save(image_file_name)
 
         # print("#INFO# ", "get one region cost time is ", (end_get_region - start_get_region).microseconds)
         # print("#INFO# ", "save one region cost time is ", (end_save_region - end_get_region).microseconds)
@@ -296,27 +295,28 @@ def cell_sampling(xml_file, save_path, path_temp, size):
 
     print("#INFO# ", "processed ", xml_file)
 
-def cut_cells(path_in, path_out, path_temp, size):
-    sub_dirs = os.listdir(path_in)
-    for sub_dir in sub_dirs:
-        file_path_i = os.path.join(path_in, sub_dir)
-        xml_files = scan_files(file_path_i, postfix=".xml")
-        save_path_i = os.path.join(path_out, sub_dir)
-        os.makedirs(save_path_i, exist_ok=True)
+def cut_cells(xml_dict, tiff_dict, path_out, size):
+    if not os.path.exists(path_out):
+        os.makedirs(path_out, exist_ok=True)
 
-        executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
-        #executor = ProcessPoolExecutor(1)
-        tasks = []
 
-        for i, xml_file in enumerate(xml_files):
-            print("add task ", i)
-            tasks.append(executor.submit(cell_sampling, xml_file, save_path_i, path_temp, size))
+    executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
+    #executor = ProcessPoolExecutor(1)
+    tasks = []
 
-        job_count = len(tasks)
-        for future in as_completed(tasks):
-            # result = future.result()  # get the returning result from calling fuction
-            job_count -= 1
-            print("One Job Done, last Job Count: %s" % (job_count))            
+    for key, xml_path in xml_dict.items():
+        if key in tiff_dict:
+            tiff_path = tiff_dict[key]
+        else:
+            print("###ERROR### %s IS NOT FOUND IN TIFF_DICT" % key)
+
+        tasks.append(executor.submit(cell_sampling, xml_path, tiff_path, path_out, size))
+
+    job_count = len(tasks)
+    for future in as_completed(tasks):
+        # result = future.result()  # get the returning result from calling fuction
+        job_count -= 1
+        print("One Job Done, last Job Count: %s" % (job_count))            
 
 
 
@@ -324,8 +324,14 @@ if __name__ == "__main__":
     # file_path = "/run/user/1000/gvfs/smb-share:server=192.168.2.221,share=data_samba/TRAIN_DATA_BIG/20181009"
     # save_path = "/home/super-speed-data/train-data-yolov3/20181009"
 
-    file_path = '/home/sakulaki/develop/test'
+    xml_files_path = ''
+    tiff_files_path = ''
+
+    xml_dict = generate_name_path_dict(xml_files_path)
+    tiff_dict = generate_name_path_dict(tiff_files_path)
+
+    # file_path = '/home/sakulaki/develop/test'
     save_path = '/home/sakulaki/develop/test_result'
 
-    cut_cells(file_path, save_path, 608)
+    cut_cells(xml_dict, tiff_dict, save_path, 608)
 
