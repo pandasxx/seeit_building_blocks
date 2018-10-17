@@ -87,6 +87,9 @@ if __name__ == "__main__":
     xml_dict = generate_name_path_dict(xml_files_path)
     tiff_dict = generate_name_path_dict(tiff_files_path)
 
+    print(len(xml_dict))
+    print(len(tiff_dict))
+
     path_out = "/home/super-speed-data/train-data-yolov3/test"
 
 

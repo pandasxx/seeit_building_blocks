@@ -116,7 +116,7 @@ def get_windows(labels, size_x, size_y, size):
     return points_xy_new
 
 # get windows in tif that contain labels
-def get_windows_new(labels, size_x, size_y, size):
+def get_windows_new(labels, size_x, size_y, size, tiff_path):
     """
         labels: {i:(x_min, x_max, y_min, y_max, color)}
         size_x, size_y: dimensions of 0th layer of tif
@@ -144,6 +144,14 @@ def get_windows_new(labels, size_x, size_y, size):
 # p6 = x_min, y_max
 # p7 = (x_max - x_min)/2, y_max
 # p8 = x_max, y_max
+
+    big_count = 0
+    small_count = 0
+
+# 1 / 3 size of the small pic
+    size_3 = int(size / 3) 
+    size_2 = int(size / 2)
+    size_1 = size
 
     for i, label in labels.items():
 
@@ -177,45 +185,55 @@ def get_windows_new(labels, size_x, size_y, size):
 #        print(p7)
 #        print(p8)
 
-        offset_half = int(size / 2) - 1
-        offset_all = size - 1
-
         # graph0 ~ 9
 
-        if ((label_size_x > 202) and (label_size_y > 202)):
-            graphs_xy.append([p0[0],               p0[1]])
-            graphs_xy.append([p1[0] - offset_half, p1[1]])
-            graphs_xy.append([p2[0] - offset_all,  p2[1]])
-            graphs_xy.append([p3[0],               p3[1] - offset_half])
-            graphs_xy.append([p4[0] - offset_half, p4[1] - offset_half])
-            graphs_xy.append([p5[0] - offset_all,  p5[1] - offset_half])
-            graphs_xy.append([p6[0],               p6[1] - offset_all])
-            graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
-            graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])
+        # ok
+        if ((label_size_x > size_3) and (label_size_y > size_3)):
+            
+            graphs_xy.append([x_min,                y_min])
+            graphs_xy.append([p4[0] - size_2 + 1,   y_min])
+            graphs_xy.append([x_max - size_1,       y_min])
+            
+            graphs_xy.append([x_min,                p4[1] - size_2])
+            graphs_xy.append([p4[0] - size_2 + 1,   p4[1] - size_2])
+            graphs_xy.append([x_max - size_1,       p4[1] - size_2])
+            
+            graphs_xy.append([x_min,                y_max - size_1])
+            graphs_xy.append([p4[0] - size_2 + 1,   y_max - size_1])
+            graphs_xy.append([x_max - size_1,       y_max - size_1])
 
-        if ((label_size_x > 202) and (label_size_y < 202)):
-            graphs_xy.append([p0[0],               p0[1]])
-            graphs_xy.append([p1[0] - offset_half, p1[1]])
-            graphs_xy.append([p2[0] - offset_all,  p2[1]])
-            graphs_xy.append([p3[0],               p3[1] - offset_half])
-            graphs_xy.append([p4[0] - offset_half, p4[1] - offset_half])
-            graphs_xy.append([p5[0] - offset_all,  p5[1] - offset_half])
-            graphs_xy.append([p6[0],               p6[1] - offset_all])
-            graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
-            graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])    
+        if ((label_size_x > size_3) and (label_size_y <= size_3)):
+            graphs_xy.append([x_min,                p4[1] - int(size / 6)])
+            graphs_xy.append([p4[0] - size_2 + 1,   p4[1] - int(size / 6)])
+            graphs_xy.append([x_max - size_1,       p4[1] - int(size / 6)])
 
-        if ((label_size_x < 202) and (label_size_y > 202)):
-            graphs_xy.append([p0[0],               p0[1]])
-            graphs_xy.append([p1[0] - offset_half, p1[1]])
-            graphs_xy.append([p2[0] - offset_all,  p2[1]])
-            graphs_xy.append([p3[0],               p3[1] - offset_half])
-            graphs_xy.append([p4[0] - offset_half, p4[1] - offset_half])
-            graphs_xy.append([p5[0] - offset_all,  p5[1] - offset_half])
-            graphs_xy.append([p6[0],               p6[1] - offset_all])
-            graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
-            graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])
+            graphs_xy.append([x_min,                p4[1] - int(size / 2)])
+            graphs_xy.append([p4[0] - size_2 + 1,   p4[1] - int(size / 2)])
+            graphs_xy.append([x_max - size_1,       p4[1] - int(size / 2)])
+            
+            graphs_xy.append([x_min,                p4[1] - int((size / 6) * 5)])
+            graphs_xy.append([p4[0] - size_2 + 1,   p4[1] - int((size / 6) * 5)])
+            graphs_xy.append([x_max - size_1,       p4[1] - int((size / 6) * 5)])
+            
+            big_count = big_count + 1
 
-        if ((label_size_x < 202) and (label_size_y < 202)):
+        if ((label_size_x <= size_3) and (label_size_y > size_3)):
+            graphs_xy.append([p4[0] - int(size / 6),        y_min])
+            graphs_xy.append([p4[0] - int(size / 2),        y_min])
+            graphs_xy.append([p4[0] - int((size / 6) * 5),  y_min])
+
+            
+            graphs_xy.append([p4[0] - int(size / 6),        p4[1] - size_2])
+            graphs_xy.append([p4[0] - int(size / 2),        p4[1] - size_2])
+            graphs_xy.append([p4[0] - int((size / 6) * 5),  p4[1] - size_2])
+            
+            graphs_xy.append([p4[0] - int(size / 6),        y_max - size_1])
+            graphs_xy.append([p4[0] - int(size / 2),        y_max - size_1])
+            graphs_xy.append([p4[0] - int((size / 6) * 5),  y_max - size_1])
+            
+            big_count = big_count + 1
+
+        if ((label_size_x <= size_3) and (label_size_y <= size_3)):
             graphs_xy.append([p4[0] - int(size / 6),        p4[1] - int(size / 6)])
             graphs_xy.append([p4[0] - int(size / 2),        p4[1] - int(size / 6)])
             graphs_xy.append([p4[0] - int((size / 6) * 5),  p4[1] - int(size / 6)])
@@ -226,6 +244,7 @@ def get_windows_new(labels, size_x, size_y, size):
             graphs_xy.append([p4[0] - int(size / 2),        p4[1] - int((size / 6) * 5)])
             graphs_xy.append([p4[0] - int((size / 6) * 5),  p4[1] - int((size / 6) * 5)])
 
+            small_count = small_count + 1
 
 #        print("### new generate windows ###")
 
@@ -235,7 +254,6 @@ def get_windows_new(labels, size_x, size_y, size):
 
     
 
-    print("graph num is ", len(graphs_xy))
 
     points_xy = {}
     x, y = 0, 0
@@ -253,11 +271,21 @@ def get_windows_new(labels, size_x, size_y, size):
                     points_xy[(x, y)].append(i)
                 else:
                     points_xy[(x, y)] = [i,]
-        
-        if (x, y) not in points_xy:
-            print("x, y:", x, " ", y)
 
-    print("point num is ", len(points_xy))
+    print("################### tiff_path", tiff_path)
+    print("################### big_count is ", big_count)
+    print("################### small_count is ", small_count)
+
+    print("################### graph num is ", len(graphs_xy))
+    print("################### point num is ", len(points_xy))
+
+#    print(x_min, " ", x_max, " ", y_min, " ", y_max)
+#    print("###############################")
+#    print(graphs_xy)
+#    print("###############################")
+#    for i in points_xy:
+#        print(i)
+    
 
     return points_xy
 
@@ -292,8 +320,8 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
     size_x, size_y = slide.dimensions
 #    points_xy = get_windows(labels, size_x, size_y, size)
     # new gen method for cell base instead list all pic
-    points_xy = get_windows_new(labels, size_x, size_y, size)
 
+    points_xy = get_windows_new(labels, size_x, size_y, size, tiff_path)
 #    print("labels: ", labels)
 #    print("points_xy: ", points_xy)
 #    print("size_x: ", size_x, "   size_y:", size_y, "   size:", size)
