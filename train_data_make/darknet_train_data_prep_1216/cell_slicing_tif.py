@@ -292,7 +292,7 @@ def get_windows_new(labels, size_x, size_y, size, tiff_path):
 
 
     
-def cell_sampling(xml_file, tiff_path, save_path, size):
+def cell_sampling(xml_file, tiff_path, save_path, size, scale):
     
 #    print("#INFO# ", "start cp file")
 
@@ -341,6 +341,7 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
         filename, _ = os.path.splitext(os.path.basename(tiff_path))
         image_file_name = save_path + "/" + filename + "_" + str(x) + "_" + str(y) + ".jpg"
 
+# need scale pic from 1216 to 608
         cell.save(image_file_name)
 
         # print("#INFO# ", "get one region cost time is ", (end_get_region - start_get_region).microseconds)
@@ -349,7 +350,7 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
     slide.close()
 
     # generate xml files
-    new_xmls = Xml(os.path.basename(filename), save_path, points_xy, labels, size)
+    new_xmls = Xml(os.path.basename(filename), save_path, points_xy, labels, size, scale)
     new_xmls.gen_xml()
 
     #end_one_big_pic = datetime.utcnow()
@@ -361,7 +362,7 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
 
     print("INFO# ", "processed ", xml_file)
 
-def cut_cells(xml_dict, tiff_dict, path_out, size):
+def cut_cells(xml_dict, tiff_dict, path_out, size, scale):
     if not os.path.exists(path_out):
         os.makedirs(path_out, exist_ok=True)
 
@@ -373,7 +374,7 @@ def cut_cells(xml_dict, tiff_dict, path_out, size):
     for key, xml_path in xml_dict.items():
         if key in tiff_dict:
             tiff_path = tiff_dict[key]
-            tasks.append(executor.submit(cell_sampling, xml_path, tiff_path, path_out, size))
+            tasks.append(executor.submit(cell_sampling, xml_path, tiff_path, path_out, size, scale))
         else:
             print("### ERROR ### %s IS NOT FOUND IN TIFF_DICT" % key)
         

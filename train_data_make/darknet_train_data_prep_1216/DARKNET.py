@@ -12,7 +12,7 @@ from utils import *
 import shutil
 
 
-def process(xml_dict, tiff_dict, path_out):
+def process(xml_dict, tiff_dict, path_out, size = 608, scale = 1.0):
     """prepare training data for darknet
     :params path_in: the directory storing kfb/tif, the tree view of path_in should be:
                      path_in:
@@ -27,7 +27,7 @@ def process(xml_dict, tiff_dict, path_out):
       
     # cut from kfb/tif to 608 sized jpgs/xmls
     print("INFO " ,"start cut cell")
-    cut_cells(xml_dict, tiff_dict, path_train, size=608)
+    cut_cells(xml_dict, tiff_dict, path_train, size, scale)
     print("INFO " ,"end cut cell")
 
     cells_end_ = datetime.utcnow()
