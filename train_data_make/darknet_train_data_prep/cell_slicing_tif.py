@@ -153,6 +153,8 @@ def get_windows_new(labels, size_x, size_y, size):
         y_max = label[3]
 
         label_max_size = max(x_max - x_min, y_max - y_min)
+        label_size_x = x_max - x_min
+        label_size_y = y_max - y_min
 
 
         p0 = (x_min,                            y_min)
@@ -177,9 +179,10 @@ def get_windows_new(labels, size_x, size_y, size):
 
         offset_half = int(size / 2) - 1
         offset_all = size - 1
-        
+
         # graph0 ~ 9
-        if (label_max_size > 202):
+
+        if ((label_size_x > 202) and (label_size_y > 202)):
             graphs_xy.append([p0[0],               p0[1]])
             graphs_xy.append([p1[0] - offset_half, p1[1]])
             graphs_xy.append([p2[0] - offset_all,  p2[1]])
@@ -189,7 +192,30 @@ def get_windows_new(labels, size_x, size_y, size):
             graphs_xy.append([p6[0],               p6[1] - offset_all])
             graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
             graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])
-        else:
+
+        if ((label_size_x > 202) and (label_size_y < 202)):
+            graphs_xy.append([p0[0],               p0[1]])
+            graphs_xy.append([p1[0] - offset_half, p1[1]])
+            graphs_xy.append([p2[0] - offset_all,  p2[1]])
+            graphs_xy.append([p3[0],               p3[1] - offset_half])
+            graphs_xy.append([p4[0] - offset_half, p4[1] - offset_half])
+            graphs_xy.append([p5[0] - offset_all,  p5[1] - offset_half])
+            graphs_xy.append([p6[0],               p6[1] - offset_all])
+            graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
+            graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])    
+
+        if ((label_size_x < 202) and (label_size_y > 202)):
+            graphs_xy.append([p0[0],               p0[1]])
+            graphs_xy.append([p1[0] - offset_half, p1[1]])
+            graphs_xy.append([p2[0] - offset_all,  p2[1]])
+            graphs_xy.append([p3[0],               p3[1] - offset_half])
+            graphs_xy.append([p4[0] - offset_half, p4[1] - offset_half])
+            graphs_xy.append([p5[0] - offset_all,  p5[1] - offset_half])
+            graphs_xy.append([p6[0],               p6[1] - offset_all])
+            graphs_xy.append([p7[0] - offset_half, p7[1] - offset_all])
+            graphs_xy.append([p8[0] - offset_all,  p8[1] - offset_all])
+
+        if ((label_size_x < 202) and (label_size_y < 202)):
             graphs_xy.append([p4[0] - int(size / 6),        p4[1] - int(size / 6)])
             graphs_xy.append([p4[0] - int(size / 2),        p4[1] - int(size / 6)])
             graphs_xy.append([p4[0] - int((size / 6) * 5),  p4[1] - int(size / 6)])
@@ -207,6 +233,9 @@ def get_windows_new(labels, size_x, size_y, size):
 
 #        print("### new generate windows ###")
 
+    
+
+    print("graph num is ", len(graphs_xy))
 
     points_xy = {}
     x, y = 0, 0
@@ -216,14 +245,19 @@ def get_windows_new(labels, size_x, size_y, size):
         y = xy[1]
 
         for i, label in labels.items():
-                if (x <= label[0] and label[1] <= x+size and y <= label[2] and label[3] <= y+size) or \
-                   ((label[0] <= x and x+size <= label[1]) and (label[2] <= y and y+size <= label[3])) or \
-                   ((label[0] <= x and x+size <= label[1]) and (y <= label[2] and label[3] <= y+size)) or \
-                   ((x <= label[0] and label[1] <= x+size) and (label[2] <= y and y+size <= label[3])):
-                    if (x, y) in points_xy:
-                        points_xy[(x, y)].append(i)
-                    else:
-                        points_xy[(x, y)] = [i,]
+            if (x <= label[0] and label[1] <= x+size and y <= label[2] and label[3] <= y+size) or \
+                ((label[0] <= x and x+size <= label[1]) and (label[2] <= y and y+size <= label[3])) or \
+                ((label[0] <= x and x+size <= label[1]) and (y <= label[2] and label[3] <= y+size)) or \
+                ((x <= label[0] and label[1] <= x+size) and (label[2] <= y and y+size <= label[3])):
+                if (x, y) in points_xy:
+                    points_xy[(x, y)].append(i)
+                else:
+                    points_xy[(x, y)] = [i,]
+        
+        if (x, y) not in points_xy:
+            print("x, y:", x, " ", y)
+
+    print("point num is ", len(points_xy))
 
     return points_xy
 

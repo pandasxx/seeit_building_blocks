@@ -9,6 +9,7 @@ from multiprocessing import cpu_count
 #from split_train_data import *
 import time
 from utils import *
+import shutil
 
 
 def process(xml_dict, tiff_dict, path_out):
@@ -20,11 +21,13 @@ def process(xml_dict, tiff_dict, path_out):
     :params path_out: resulting training data should include three folders: train/valid/test, and three corresponding txts
     """
 
-    start_ = datetime.utcnow()  
+    start_ = datetime.utcnow()
+
+    path_train = path_out + "/train"  
       
     # cut from kfb/tif to 608 sized jpgs/xmls
     print("#INFO# " ,"start cut cell")
-    cut_cells(xml_dict, tiff_dict, path_out, size=608)
+    cut_cells(xml_dict, tiff_dict, path_train, size=608)
     print("#INFO# " ,"end cut cell")
 
     cells_end_ = datetime.utcnow()
@@ -33,7 +36,7 @@ def process(xml_dict, tiff_dict, path_out):
     #do_rotate(path_train)
 
     # do augmentation: flip
-    do_flip(path_out)
+    # do_flip(path_train)
 
     enhance_end_ = datetime.utcnow()
 
@@ -56,13 +59,37 @@ if __name__ == "__main__":
     # path_in = "/home/data_samba/DATA/checked_cells/manual_labelled_checked/label_kfb_tif/label_data"
     # path_out = "/home/data_samba/TRAIN_DATA/4yolov3/20180929"
 
-    xml_files_path = '/home/cnn/Development/code/seeit_building_blocks/data/xml'
-    tiff_files_path = '/home/cnn/Development/code/seeit_building_blocks/data/tiff'
+    # xml_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED'
+    # tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/pic'
+
+    # xml_dict = generate_name_path_dict(xml_files_path)
+    # tiff_dict = generate_name_path_dict(tiff_files_path)
+
+    # print(len(xml_dict))
+    # print(len(tiff_dict))
+
+    # count = 0
+    # for key in xml_dict:
+    #     if key not in tiff_dict:
+    #         print("xml not in tiff")
+    #         print(xml_dict[key])
+    #         count = count + 1
+    #         shutil.copy(xml_dict[key], "/home/static-data/TRAIN_DATA_BIG/test")
+    # print(count)
+
+    # path_out = "/home/super-speed-data/train-data-yolov3/20181016"
+
+
+
+    xml_files_path = '/home/static-data/TRAIN_DATA_BIG/test_xml'
+    tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/test_pic'
 
     xml_dict = generate_name_path_dict(xml_files_path)
     tiff_dict = generate_name_path_dict(tiff_files_path)
 
-    path_out = "/home/cnn/Development/data/tmp"
+    path_out = "/home/super-speed-data/train-data-yolov3/test"
+
+
 
     process(xml_dict, tiff_dict, path_out)
 
