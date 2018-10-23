@@ -36,7 +36,7 @@ class Xml:
             ET.SubElement(size, "depth").text = "3"
 
             ET.SubElement(root, "segmented").text = "0"
-            
+
             for label_index in label_indexs:
                 object = ET.SubElement(root, "object")
                 ET.SubElement(object, "name").text = self.labels[label_index][4]
@@ -48,10 +48,10 @@ class Xml:
                 label_xmax = self.labels[label_index][1]
                 label_ymin = self.labels[label_index][2]
                 label_ymax = self.labels[label_index][3]
-                label_xmin_new = int(((label_xmin - xy[0]) * scale) + 0.5)
-                label_ymin_new = int(((label_ymin - xy[1]) * scale) + 0.5)
-                label_xmax_new = int(((label_xmax - xy[0]) * scale) + 0.5)
-                label_ymax_new = int(((label_ymax - xy[1]) * scale) + 0.5)
+                label_xmin_new = int(((label_xmin - xy[0]) * self.scale) + 0.5)
+                label_ymin_new = int(((label_ymin - xy[1]) * self.scale) + 0.5)
+                label_xmax_new = int(((label_xmax - xy[0]) * self.scale) + 0.5)
+                label_ymax_new = int(((label_ymax - xy[1]) * self.scale) + 0.5)
                 if label_xmin <= xy[0] and xy[0]+self.size <= label_xmax:
                     label_xmin_new = 0
                     label_xmax_new = self.size

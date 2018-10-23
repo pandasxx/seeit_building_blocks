@@ -342,7 +342,10 @@ def cell_sampling(xml_file, tiff_path, save_path, size, scale):
         image_file_name = save_path + "/" + filename + "_" + str(x) + "_" + str(y) + ".jpg"
 
 # need scale pic from 1216 to 608
+        
+        cell = cell.resize((int(size * scale + 0.5), int(size * scale + 0.5)))
         cell.save(image_file_name)
+
 
         # print("#INFO# ", "get one region cost time is ", (end_get_region - start_get_region).microseconds)
         # print("#INFO# ", "save one region cost time is ", (end_save_region - end_get_region).microseconds)

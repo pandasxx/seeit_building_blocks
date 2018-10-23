@@ -68,11 +68,11 @@ if __name__ == "__main__":
     # print(len(xml_dict))
     # print(len(tiff_dict))
 
-    xml_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED'
-    tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/pic'
+    #xml_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED'
+    #tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/pic'
 
-    #xml_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_xml'
-    #tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_pic'
+    xml_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_xml'
+    tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_pic'
 
     xml_dict = generate_name_path_dict(xml_files_path, ['.xml'])
     tiff_dict = generate_name_path_dict(tiff_files_path, ['.tif', '.kfb'])
@@ -88,11 +88,11 @@ if __name__ == "__main__":
     #print(len(xml_dict))
     #print(len(tiff_dict))
 
-    path_out = "/home/super-speed-data/train-data-yolov3/20181016"
+    path_out = "/home/super-speed-data/train-data-yolov3/test"
 
 
 
-    process(xml_dict, tiff_dict, path_out)
+    process(xml_dict, tiff_dict, path_out, size = 1216, scale = 0.5)
 
     # split_train_data(origin_file = path_out + '/' + 'train.txt', 
     #                  train_target_file = path_out + '/' + 'train_ready.txt', 

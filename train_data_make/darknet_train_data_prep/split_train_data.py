@@ -2,7 +2,7 @@ import random
 
 def split_train_data(origin_file = 'train_proc.txt', train_target_file = 'train_ready.txt', valid_target_file = 'valid_ready.txt'):
 
-	ratio = 0.02
+	ratio = 0.05
 
 	file_object = open(origin_file)
 
@@ -44,6 +44,7 @@ def split_train_data(origin_file = 'train_proc.txt', train_target_file = 'train_
 
 if __name__ == "__main__":
 	
-	split_train_data(origin_file = '/home/super-speed-data/train-data-yolov3/20181009/train_proc.txt', 
-					 train_target_file = '/home/super-speed-data/train-data-yolov3/20181009/train_ready.txt', 
-					 valid_target_file = '/home/super-speed-data/train-data-yolov3/20181009/valid_ready.txt')
+
+	split_train_data(origin_file =       '/home/super-speed-data/train-data-yolov3/20181016/train.txt', 
+					 train_target_file = '/home/super-speed-data/train-data-yolov3/20181016/train_ready.txt', 
+					 valid_target_file = '/home/super-speed-data/train-data-yolov3/20181016/valid_ready.txt')
