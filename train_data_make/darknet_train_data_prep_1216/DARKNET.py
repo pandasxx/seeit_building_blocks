@@ -91,7 +91,8 @@ if __name__ == "__main__":
     path_out = "/home/super-speed-data/train-data-yolov3/test"
 
 
-
+    # if size is 1216 and scale is 0.5, it means
+    # cut 1216 size image from tiff and resize image\label to 608
     process(xml_dict, tiff_dict, path_out, size = 1216, scale = 0.5)
 
     # split_train_data(origin_file = path_out + '/' + 'train.txt', 
