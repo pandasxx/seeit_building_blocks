@@ -45,6 +45,6 @@ def split_train_data(origin_file = 'train_proc.txt', train_target_file = 'train_
 if __name__ == "__main__":
 	
 
-	split_train_data(origin_file =       '/home/super-speed-data/train-data-yolov3/20181016/train.txt', 
-					 train_target_file = '/home/super-speed-data/train-data-yolov3/20181016/train_ready.txt', 
-					 valid_target_file = '/home/super-speed-data/train-data-yolov3/20181016/valid_ready.txt')
+	split_train_data(origin_file =  '/home/nvme/train-data-yolov3/20181029/train.txt', 
+					 train_target_file = '/home/nvme/train-data-yolov3/20181029/train_ready.txt', 
+					 valid_target_file = '/home/nvme/train-data-yolov3/20181029/valid_ready.txt')

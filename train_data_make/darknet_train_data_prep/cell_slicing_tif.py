@@ -3,6 +3,8 @@ import os
 import openslide
 import scipy.misc
 import xml.dom.minidom
+import cv2
+import numpy as np
 
 from multiprocessing import cpu_count
 from concurrent.futures import ProcessPoolExecutor, as_completed, wait
@@ -341,7 +343,10 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
         filename, _ = os.path.splitext(os.path.basename(tiff_path))
         image_file_name = save_path + "/" + filename + "_" + str(x) + "_" + str(y) + ".jpg"
 
-        cell.save(image_file_name)
+        #cell.save(image_file_name)
+
+        cv_image = cv2.cvtColor(np.asarray(cell), cv2.COLOR_RGBA2BGR)
+        cv2.imwrite((image_file_name), cv_image, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
 
         # print("#INFO# ", "get one region cost time is ", (end_get_region - start_get_region).microseconds)
         # print("#INFO# ", "save one region cost time is ", (end_save_region - end_get_region).microseconds)
@@ -367,7 +372,7 @@ def cut_cells(xml_dict, tiff_dict, path_out, size):
 
 
     executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
-    # executor = ProcessPoolExecutor(1)
+    #executor = ProcessPoolExecutor(1)
     tasks = []
 
     for key, xml_path in xml_dict.items():

@@ -68,8 +68,8 @@ if __name__ == "__main__":
     # print(len(xml_dict))
     # print(len(tiff_dict))
 
-    xml_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED'
-    tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/20181009/pic'
+    xml_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181029/XMLS_SELECTED'
+    tiff_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181009/pic'
 
     #xml_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_xml'
     #tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_pic'
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     #print(len(xml_dict))
     #print(len(tiff_dict))
 
-    path_out = "/home/super-speed-data/train-data-yolov3/20181016"
+    path_out = "/home/nvme/train-data-yolov3/20181029"
 
 
 
