@@ -3,6 +3,8 @@ import os
 import openslide
 import scipy.misc
 import xml.dom.minidom
+import cv2
+import numpy as np
 
 from multiprocessing import cpu_count
 from concurrent.futures import ProcessPoolExecutor, as_completed, wait
@@ -39,14 +41,15 @@ def scan_files(directory, prefix=None, postfix=None):
 #          "#aa55ff": "EC", "#ff5500": "AGC1", "#ff557f": "AGC2", "#ff55ff": "AGC3", "#00aa00": "FUNGI",
 #          "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
 
-# classes = {"#aa0000": "HSIL", "#aa007f": "ASCH",
-#           "#005500": "LSIL", "#00557f": "ASCUS", "#0055ff": "SCC",
-#           "#aa55ff": "EC", "#ff5500": "AGC", "#00aa00": "FUNGI",
-#           "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
+#classes = {"#aa0000": "HSIL", "#aa007f": "ASCH",
+#          "#005500": "LSIL", "#00557f": "ASCUS", "#0055ff": "SCC",
+#          "#aa55ff": "EC", "#ff5500": "AGC", "#00aa00": "FUNGI",
+#          "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
 
 classes = {"#aa0000": "HSIL", "#005500": "LSIL", "#0055ff": "SCC",
           "#aa55ff": "EC", "#ff5500": "AGC", "#00aa00": "FUNGI",
           "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
+
 
 # get coordinates of labels in a xml
 def get_labels(xml_file):
@@ -296,7 +299,7 @@ def get_windows_new(labels, size_x, size_y, size, tiff_path):
 
 
     
-def cell_sampling(xml_file, tiff_path, save_path, size, scale):
+def cell_sampling(xml_file, tiff_path, save_path, size):
     
 #    print("#INFO# ", "start cp file")
 
@@ -321,8 +324,9 @@ def cell_sampling(xml_file, tiff_path, save_path, size, scale):
             slide = openslide.OpenSlide(tiff_path)
         except:
             slide = TSlide(tiff_path)
-    except:
+    except Exception as e:
         print("ERROR #", "can not open pic ", tiff_path)
+        print(e)
         exit()
 
     size_x, size_y = slide.dimensions
@@ -345,10 +349,12 @@ def cell_sampling(xml_file, tiff_path, save_path, size, scale):
         filename, _ = os.path.splitext(os.path.basename(tiff_path))
         image_file_name = save_path + "/" + filename + "_" + str(x) + "_" + str(y) + ".jpg"
 
-# need scale pic from 1216 to 608
-        
-        cell = cell.resize((int(size * scale + 0.5), int(size * scale + 0.5)))
+        # paiyin need 299
+        cell.resize((299,299))
         cell.save(image_file_name)
+
+        #cv_image = cv2.cvtColor(np.asarray(cell), cv2.COLOR_RGBA2BGR)
+        #cv2.imwrite((image_file_name), cv_image, [int(cv2.IMWRITE_JPEG_QUALITY), 95])
 
         # print("#INFO# ", "get one region cost time is ", (end_get_region - start_get_region).microseconds)
         # print("#INFO# ", "save one region cost time is ", (end_save_region - end_get_region).microseconds)
@@ -356,8 +362,8 @@ def cell_sampling(xml_file, tiff_path, save_path, size, scale):
     slide.close()
 
     # generate xml files
-    new_xmls = Xml(os.path.basename(filename), save_path, points_xy, labels, size, scale)
-    new_xmls.gen_xml()
+    #new_xmls = Xml(os.path.basename(filename), save_path, points_xy, labels, size)
+    #new_xmls.gen_xml()
 
     #end_one_big_pic = datetime.utcnow()
 
@@ -368,19 +374,19 @@ def cell_sampling(xml_file, tiff_path, save_path, size, scale):
 
     print("INFO# ", "processed ", xml_file)
 
-def cut_cells(xml_dict, tiff_dict, path_out, size, scale):
+def cut_cells(xml_dict, tiff_dict, path_out, size):
     if not os.path.exists(path_out):
         os.makedirs(path_out, exist_ok=True)
 
 
-    executor = ProcessPoolExecutor(max_workers=cpu_count() - 24)
-    # executor = ProcessPoolExecutor(1)
+    executor = ProcessPoolExecutor(max_workers=cpu_count() - 4)
+    #executor = ProcessPoolExecutor(1)
     tasks = []
 
     for key, xml_path in xml_dict.items():
         if key in tiff_dict:
             tiff_path = tiff_dict[key]
-            tasks.append(executor.submit(cell_sampling, xml_path, tiff_path, path_out, size, scale))
+            tasks.append(executor.submit(cell_sampling, xml_path, tiff_path, path_out, size))
         else:
             print("### ERROR ### %s IS NOT FOUND IN TIFF_DICT" % key)
         

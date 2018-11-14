@@ -68,8 +68,10 @@ if __name__ == "__main__":
     # print(len(xml_dict))
     # print(len(tiff_dict))
 
-    xml_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181029/XMLS_SELECTED'
+    xml_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181109xml/XMLS_SELECTED'
+    #xml_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181109xml/XMLS_SELECTED/TC17015039.xml'
     tiff_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181009/pic'
+    #tiff_files_path = '/home/hdd1/Data/TRAIN_DATA_BIG/20181009/pic/TC17015039.kfb'
 
     #xml_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_xml'
     #tiff_files_path = '/home/static-data/TRAIN_DATA_BIG/bugtest_pic'
@@ -85,10 +87,10 @@ if __name__ == "__main__":
             count = count + 1
     print(count)
 
-    #print(len(xml_dict))
-    #print(len(tiff_dict))
+    print(len(xml_dict))
+    print(len(tiff_dict))
 
-    path_out = "/home/nvme/train-data-yolov3/20181029"
+    path_out = "/home/nvme/train-data-yolov3/20181109"
 
 
 

@@ -10,9 +10,13 @@ import xml.etree.ElementTree as ET
 #           "ADC":7, "EC":8, "FUNGI":9, "TRI":10, "CC":11, "ACTINO":12, "VIRUS":13}
 
 # 12 classes merge agc1 agc2 adc as agc
-classes = {"ASCUS":0, "LSIL":1, "ASCH":2, "HSIL":3, "SCC":4, "AGC":5, 
-           "EC":6, "FUNGI":7, "TRI":8, "CC":9, "ACTINO":10, "VIRUS":11}
-           
+# classes = {"ASCUS":0, "LSIL":1, "ASCH":2, "HSIL":3, "SCC":4, "AGC":5, 
+#            "EC":6, "FUNGI":7, "TRI":8, "CC":9, "ACTINO":10, "VIRUS":11}
+
+# 10 classes mv ascus and asch to other class
+classes = {"LSIL":0, "HSIL":1, "SCC":2, "AGC":3, 
+           "EC":4, "FUNGI":5, "TRI":6, "CC":7, "ACTINO":8, "VIRUS":9}
+
 # # 5 classes
 # classes = {"ASCUS":0, "LSIL":1, "ASCH":2, "HSIL":3, "SCC":4}
 

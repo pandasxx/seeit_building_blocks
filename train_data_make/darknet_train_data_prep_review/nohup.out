@@ -1,0 +1,1327 @@
+/home/sakulaki/develop/building_blocks/train_data_make/darknet_train_data_prep
+748
+1179
+#INFO#  start cut cell
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_12_15.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_12_15.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-16_03_56.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-16_03_56.tif
+################### big_count is  1
+################### small_count is  1
+################### graph num is  18
+################### point num is  18
+# process #  0 / 17 3922 32311 608 608
+#INFO#  small pics num is  17
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-09-16_03_56.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-16_46_18.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-16_46_18.tif
+################### big_count is  0
+################### small_count is  16
+################### graph num is  144
+################### point num is  144
+# process #  0 / 143 13807 25356 608 608
+# process #  100 / 143 5139 40773 608 608
+#INFO#  small pics num is  143
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-09-16_46_18.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-16_44_31.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-16_44_31.tif
+################### big_count is  0
+################### small_count is  2
+################### graph num is  18
+################### point num is  18
+# process #  0 / 17 20682 30559 608 608
+#INFO#  small pics num is  17
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-05-05-16_44_31.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-16_34_17.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-16_34_17.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2017-09-22-14_04_59.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2017-09-22-14_04_59.tif
+################### big_count is  4
+################### small_count is  17
+################### graph num is  216
+################### point num is  216
+# process #  0 / 215 46780 51647 608 608
+# process #  100 / 215 37850 42157 608 608
+# process #  200 / 215 48024 39292 608 608
+#INFO#  small pics num is  215
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-22-14_04_59.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_05_24.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_05_24.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-01-15-15_04_00.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-01-15-15_04_00.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-19_59_29.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-19_59_29.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-11-19_02_18.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-11-19_02_18.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_45_06.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_45_06.tif
+################### big_count is  0
+################### small_count is  15
+################### graph num is  135
+################### point num is  135
+# process #  0 / 134 35564 32877 608 608
+# process #  100 / 134 33167 13443 608 608
+#INFO#  small pics num is  134
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-05-08-16_45_06.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_09_48.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_09_48.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-15-10_18_28.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-15-10_18_28.tif
+################### big_count is  1
+################### small_count is  84
+################### graph num is  810
+################### point num is  810
+# process #  0 / 809 29029 15460 608 608
+# process #  100 / 809 30814 25268 608 608
+# process #  200 / 809 42807 49290 608 608
+# process #  300 / 809 8709 9299 608 608
+# process #  400 / 809 26225 16047 608 608
+# process #  500 / 809 41630 38548 608 608
+# process #  600 / 809 38215 24195 608 608
+# process #  700 / 809 41206 37093 608 608
+# process #  800 / 809 32680 29370 608 608
+#INFO#  small pics num is  809
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-15-10_18_28.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_54_46.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_54_46.tif
+################### big_count is  13
+################### small_count is  37
+################### graph num is  504
+################### point num is  504
+# process #  0 / 503 62532 32583 608 608
+# process #  100 / 503 45976 47560 608 608
+# process #  200 / 503 59193 46129 608 608
+# process #  300 / 503 30990 53334 608 608
+# process #  400 / 503 38763 46887 608 608
+# process #  500 / 503 42226 22357 608 608
+#INFO#  small pics num is  503
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-19-11_47_00.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-13_41_18.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-13_41_18.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-16_05_56.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-16_05_56.tif
+################### big_count is  2
+################### small_count is  6
+################### graph num is  126
+################### point num is  126
+# process #  0 / 125 42816 8693 608 608
+# process #  100 / 125 19588 24490 608 608
+#INFO#  small pics num is  125
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-07-16_05_56.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_37_27.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_37_27.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_43_44.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_43_44.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-03-22-15_09_47.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-03-22-15_09_47.tif
+################### big_count is  0
+################### small_count is  9
+################### graph num is  99
+################### point num is  99
+# process #  0 / 98 35621 49001 608 608
+#INFO#  small pics num is  98
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-03-22-15_09_47.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-18_06_58.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-18_06_58.tif
+################### big_count is  4
+################### small_count is  21
+################### graph num is  243
+################### point num is  243
+# process #  0 / 242 23179 37392 608 608
+# process #  100 / 242 15514 15610 608 608
+# process #  200 / 242 19614 21347 608 608
+#INFO#  small pics num is  242
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-09-18_06_58.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-19_23_06.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-19_23_06.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/yangminhui/2017-10-19-18_26_02.tif ...PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-19_24_43.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-19_24_43.tif
+################### big_count is  0
+################### small_count is  4
+################### graph num is  36
+################### point num is  36
+# process #  0 / 35 20094 52251 608 608
+#INFO#  small pics num is  35
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-09-19_24_43.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-19-13_32_51.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-19-13_32_51.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/FUNGI/2018-01-16-11_19_37.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/FUNGI/2018-01-16-11_19_37.tif
+################### big_count is  1
+################### small_count is  0
+################### graph num is  126
+################### point num is  123
+# process #  0 / 122 23282 7575 608 608
+# process #  100 / 122 31167 47539 608 608
+#INFO#  small pics num is  122
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-01-16-11_19_37.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/zhuxiaohui/2018-03-20-15_51_20.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/zhuxiaohui/2018-03-20-15_51_20.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2018-04-02-15_08_19.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2018-04-02-15_08_19.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-15_59_05.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-15_59_05.tif
+################### big_count is  1
+################### small_count is  0
+################### graph num is  9
+################### point num is  9
+# process #  0 / 8 34238 61183 608 608
+#INFO#  small pics num is  8
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-09-15_59_05.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_08_04.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_08_04.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-03-22-15_27_29.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-03-22-15_27_29.tif
+################### big_count is  9
+################### small_count is  17
+################### graph num is  549
+################### point num is  549
+# process #  0 / 548 30102 26228 608 608
+# process #  100 / 548 4102 32999 608 608
+# process #  200 / 548 40091 17368 608 608
+# process #  300 / 548 12341 56142 608 608
+# process #  400 / 548 20118 27044 608 608
+# process #  500 / 548 54647 48951 608 608
+#INFO#  small pics num is  548
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-03-22-15_27_29.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2017-09-22-10_45_03.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2017-09-22-10_45_03.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-19_54_21.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-19_54_21.tif
+################### big_count is  0
+################### small_count is  9
+################### graph num is  81
+################### point num is  81
+# process #  0 / 80 46973 41414 608 608
+#INFO#  small pics num is  80
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-05-05-19_54_21.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-01-15-15_49_03.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-01-15-15_49_03.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_27_35.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_27_35.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/yangminhui/2017-10-19-18_28_22.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/yangminhui/2017-10-19-18_28_22.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-10_03_28.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-10_03_28.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-12_13_59.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-12_13_59.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-19_57_10.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-19_57_10.tif
+################### big_count is  15
+################### small_count is  84
+################### graph num is  909
+################### point num is  909
+# process #  0 / 908 28335 22395 608 608
+# process #  100 / 908 19317 14418 608 608
+# process #  200 / 908 37195 29801 608 608
+# process #  300 / 908 48776 29326 608 608
+# process #  400 / 908 10966 31353 608 608
+# process #  500 / 908 29061 25562 608 608
+# process #  600 / 908 43845 13819 608 608
+# process #  700 / 908 28583 39197 608 608
+# process #  800 / 908 22721 39576 608 608
+# process #  900 / 908 45605 22589 608 608
+#INFO#  small pics num is  908
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-19-19_57_10.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-20_29_08.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-20_29_08.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-14-21_10_20.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-14-21_10_20.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_24_10.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_24_10.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_41_39.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_41_39.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-15-09_56_04.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-15-09_56_04.tif
+################### big_count is  21
+################### small_count is  17
+################### graph num is  729
+################### point num is  729
+# process #  0 / 728 14721 38019 608 608
+# process #  100 / 728 47323 26037 608 608
+# process #  200 / 728 20041 52221 608 608
+# process #  300 / 728 12291 10161 608 608
+# process #  400 / 728 38824 16869 608 608
+# process #  500 / 728 20958 28596 608 608
+# process #  600 / 728 38458 24785 608 608
+# process #  700 / 728 53438 28680 608 608
+#INFO#  small pics num is  728
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-15-09_56_04.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-10_41_32.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-10_41_32.tif
+################### big_count is  9
+################### small_count is  28
+################### graph num is  378
+################### point num is  378
+# process #  0 / 377 6838 32066 608 608
+# process #  100 / 377 17524 60160 608 608
+# process #  200 / 377 56115 41729 608 608
+# process #  300 / 377 35353 55246 608 608
+#INFO#  small pics num is  377
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-19-10_41_32.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_37_43.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_37_43.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-12_32_47.xml ...###ERROR### 2018-01-15-18_43_41 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-03-16-19_47_54 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-07-09_45_31 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-19-11_47_00 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-19-20_06_17 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-22-13_53_01 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-10-17_43_10 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-19-17_31_51 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-06-01_12_19_41 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-07-11_39_33 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-01-15-18_39_46 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-12-20_37_36 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-09-17_01_09 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-05-08-16_04_40 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-25-15_22_03 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-19-18_13_29 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-19-17_20_29 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-03-15-15_05_57 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-01-15-18_26_21 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-07-16_03_36 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2018-03-14-21_06_03 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-09-19_39_43 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-09-07-19_17_48 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-12-18_51_30 IS NOT FOUND IN TIFF_DICT
+###ERROR### 2017-10-19-18_33_32 IS NOT FOUND IN TIFF_DICT
+One Job Done, last Job Count: 747
+One Job Done, last Job Count: 746
+One Job Done, last Job Count: 745
+One Job Done, last Job Count: 744
+One Job Done, last Job Count: 743
+One Job Done, last Job Count: 742
+One Job Done, last Job Count: 741
+One Job Done, last Job Count: 740
+One Job Done, last Job Count: 739
+One Job Done, last Job Count: 738
+One Job Done, last Job Count: 737
+One Job Done, last Job Count: 736
+One Job Done, last Job Count: 735
+One Job Done, last Job Count: 734
+One Job Done, last Job Count: 733
+One Job Done, last Job Count: 732
+One Job Done, last Job Count: 731
+One Job Done, last Job Count: 730
+One Job Done, last Job Count: 729
+One Job Done, last Job Count: 728
+One Job Done, last Job Count: 727
+One Job Done, last Job Count: 726
+One Job Done, last Job Count: 725
+One Job Done, last Job Count: 724
+One Job Done, last Job Count: 723
+One Job Done, last Job Count: 722
+One Job Done, last Job Count: 721
+One Job Done, last Job Count: 720
+One Job Done, last Job Count: 719
+One Job Done, last Job Count: 718
+One Job Done, last Job Count: 717
+One Job Done, last Job Count: 716
+One Job Done, last Job Count: 715
+One Job Done, last Job Count: 714
+One Job Done, last Job Count: 713
+One Job Done, last Job Count: 712
+One Job Done, last Job Count: 711
+One Job Done, last Job Count: 710
+One Job Done, last Job Count: 709
+One Job Done, last Job Count: 708
+One Job Done, last Job Count: 707
+One Job Done, last Job Count: 706
+One Job Done, last Job Count: 705
+One Job Done, last Job Count: 704
+One Job Done, last Job Count: 703
+One Job Done, last Job Count: 702
+One Job Done, last Job Count: 701
+One Job Done, last Job Count: 700
+One Job Done, last Job Count: 699
+One Job Done, last Job Count: 698
+One Job Done, last Job Count: 697
+One Job Done, last Job Count: 696
+One Job Done, last Job Count: 695
+One Job Done, last Job Count: 694
+One Job Done, last Job Count: 693
+One Job Done, last Job Count: 692
+One Job Done, last Job Count: 691
+One Job Done, last Job Count: 690
+One Job Done, last Job Count: 689
+One Job Done, last Job Count: 688
+One Job Done, last Job Count: 687
+One Job Done, last Job Count: 686
+One Job Done, last Job Count: 685
+One Job Done, last Job Count: 684
+One Job Done, last Job Count: 683
+One Job Done, last Job Count: 682
+One Job Done, last Job Count: 681
+One Job Done, last Job Count: 680
+One Job Done, last Job Count: 679
+One Job Done, last Job Count: 678
+One Job Done, last Job Count: 677
+One Job Done, last Job Count: 676
+One Job Done, last Job Count: 675
+One Job Done, last Job Count: 674
+One Job Done, last Job Count: 673
+One Job Done, last Job Count: 672
+One Job Done, last Job Count: 671
+One Job Done, last Job Count: 670
+One Job Done, last Job Count: 669
+One Job Done, last Job Count: 668
+One Job Done, last Job Count: 667
+One Job Done, last Job Count: 666
+One Job Done, last Job Count: 665
+One Job Done, last Job Count: 664
+One Job Done, last Job Count: 663
+One Job Done, last Job Count: 662
+One Job Done, last Job Count: 661
+One Job Done, last Job Count: 660
+One Job Done, last Job Count: 659
+One Job Done, last Job Count: 658
+One Job Done, last Job Count: 657
+One Job Done, last Job Count: 656
+One Job Done, last Job Count: 655
+One Job Done, last Job Count: 654
+One Job Done, last Job Count: 653
+One Job Done, last Job Count: 652
+One Job Done, last Job Count: 651
+One Job Done, last Job Count: 650
+One Job Done, last Job Count: 649
+One Job Done, last Job Count: 648
+One Job Done, last Job Count: 647
+One Job Done, last Job Count: 646
+One Job Done, last Job Count: 645
+One Job Done, last Job Count: 644
+One Job Done, last Job Count: 643
+One Job Done, last Job Count: 642
+One Job Done, last Job Count: 641
+One Job Done, last Job Count: 640
+One Job Done, last Job Count: 639
+One Job Done, last Job Count: 638
+One Job Done, last Job Count: 637
+One Job Done, last Job Count: 636
+One Job Done, last Job Count: 635
+One Job Done, last Job Count: 634
+One Job Done, last Job Count: 633
+One Job Done, last Job Count: 632
+One Job Done, last Job Count: 631
+One Job Done, last Job Count: 630
+One Job Done, last Job Count: 629
+One Job Done, last Job Count: 628
+One Job Done, last Job Count: 627
+One Job Done, last Job Count: 626
+One Job Done, last Job Count: 625
+One Job Done, last Job Count: 624
+One Job Done, last Job Count: 623
+One Job Done, last Job Count: 622
+One Job Done, last Job Count: 621
+One Job Done, last Job Count: 620
+One Job Done, last Job Count: 619
+One Job Done, last Job Count: 618
+One Job Done, last Job Count: 617
+One Job Done, last Job Count: 616
+One Job Done, last Job Count: 615
+One Job Done, last Job Count: 614
+One Job Done, last Job Count: 613
+One Job Done, last Job Count: 612
+One Job Done, last Job Count: 611
+One Job Done, last Job Count: 610
+One Job Done, last Job Count: 609
+One Job Done, last Job Count: 608
+One Job Done, last Job Count: 607
+One Job Done, last Job Count: 606
+One Job Done, last Job Count: 605
+One Job Done, last Job Count: 604
+One Job Done, last Job Count: 603
+One Job Done, last Job Count: 602
+One Job Done, last Job Count: 601
+One Job Done, last Job Count: 600
+One Job Done, last Job Count: 599
+One Job Done, last Job Count: 598
+One Job Done, last Job Count: 597
+One Job Done, last Job Count: 596
+One Job Done, last Job Count: 595
+One Job Done, last Job Count: 594
+One Job Done, last Job Count: 593
+One Job Done, last Job Count: 592
+One Job Done, last Job Count: 591
+One Job Done, last Job Count: 590
+One Job Done, last Job Count: 589
+One Job Done, last Job Count: 588
+One Job Done, last Job Count: 587
+One Job Done, last Job Count: 586
+One Job Done, last Job Count: 585
+One Job Done, last Job Count: 584
+One Job Done, last Job Count: 583
+One Job Done, last Job Count: 582
+One Job Done, last Job Count: 581
+One Job Done, last Job Count: 580
+One Job Done, last Job Count: 579
+One Job Done, last Job Count: 578
+One Job Done, last Job Count: 577
+One Job Done, last Job Count: 576
+One Job Done, last Job Count: 575
+One Job Done, last Job Count: 574
+One Job Done, last Job Count: 573
+One Job Done, last Job Count: 572
+One Job Done, last Job Count: 571
+One Job Done, last Job Count: 570
+One Job Done, last Job Count: 569
+One Job Done, last Job Count: 568
+One Job Done, last Job Count: 567
+One Job Done, last Job Count: 566
+One Job Done, last Job Count: 565
+One Job Done, last Job Count: 564
+One Job Done, last Job Count: 563
+One Job Done, last Job Count: 562
+One Job Done, last Job Count: 561
+One Job Done, last Job Count: 560
+One Job Done, last Job Count: 559
+One Job Done, last Job Count: 558
+One Job Done, last Job Count: 557
+One Job Done, last Job Count: 556
+One Job Done, last Job Count: 555
+One Job Done, last Job Count: 554
+One Job Done, last Job Count: 553
+One Job Done, last Job Count: 552
+One Job Done, last Job Count: 551
+One Job Done, last Job Count: 550
+One Job Done, last Job Count: 549PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/liangxinrong/2018-03-27-21_52_14.kfb ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/liangxinrong/2018-03-27-21_52_14.kfb
+################### big_count is  1
+################### small_count is  5
+################### graph num is  63
+################### point num is  63
+# process #  0 / 62 5847 20698 608 608
+#INFO#  small pics num is  62
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-03-27-21_52_14.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-19_52_21.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/VIRUS/2018-05-05-19_52_21.tif
+################### big_count is  1
+################### small_count is  28
+################### graph num is  261
+################### point num is  261
+# process #  0 / 260 32534 10553 608 608
+# process #  100 / 260 14392 21332 608 608
+# process #  200 / 260 18154 17215 608 608
+#INFO#  small pics num is  260
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-05-05-19_52_21.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-18_28_21.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-18_28_21.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-05-08-18_58_49.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-05-08-18_58_49.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_44_52.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_44_52.tif
+################### big_count is  13
+################### small_count is  16
+################### graph num is  324
+################### point num is  324
+# process #  0 / 323 10776 12742 608 608
+# process #  100 / 323 15710 8752 608 608
+# process #  200 / 323 9495 19243 608 608
+# process #  300 / 323 35630 16968 608 608
+#INFO#  small pics num is  323
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-19-11_44_52.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-16-17_54_37.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-16-17_54_37.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/FUNGI/2018-06-11_11_51_45.kfb ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/FUNGI/2018-06-11_11_51_45.kfb
+################### big_count is  14
+################### small_count is  220
+################### graph num is  2115
+################### point num is  2115
+# process #  0 / 2114 57984 17878 608 608
+# process #  100 / 2114 22650 40034 608 608
+# process #  200 / 2114 42163 43733 608 608
+# process #  300 / 2114 58638 15735 608 608
+# process #  400 / 2114 26432 54669 608 608
+# process #  500 / 2114 58931 16924 608 608
+# process #  600 / 2114 58687 15527 608 608
+# process #  700 / 2114 9042 15778 608 608
+# process #  800 / 2114 29974 29180 608 608
+# process #  900 / 2114 58517 16165 608 608
+# process #  1000 / 2114 21671 18647 608 608
+# process #  1100 / 2114 11100 24804 608 608
+# process #  1200 / 2114 36051 56077 608 608
+# process #  1300 / 2114 58890 15729 608 608
+# process #  1400 / 2114 20083 30741 608 608
+# process #  1500 / 2114 50890 29940 608 608
+# process #  1600 / 2114 20285 31146 608 608
+# process #  1700 / 2114 8343 17066 608 608
+# process #  1800 / 2114 18416 20382 608 608
+# process #  1900 / 2114 14441 9214 608 608
+# process #  2000 / 2114 41250 37249 608 608
+# process #  2100 / 2114 8224 16506 608 608
+#INFO#  small pics num is  2114
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-06-11_11_51_45.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-14_15_53.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-14_15_53.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-16_47_12.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-16_47_12.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-19-11_16_01.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-19-11_16_01.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_19_05.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_19_05.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_16_57.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/CC/2018-01-15-18_16_57.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-18_05_23.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-18_05_23.tif
+################### big_count is  1
+################### small_count is  49
+################### graph num is  468
+################### point num is  468
+# process #  0 / 467 11930 50465 608 608
+# process #  100 / 467 11159 21557 608 608
+# process #  200 / 467 48270 28563 608 608
+# process #  300 / 467 13758 21387 608 608
+# process #  400 / 467 8654 20536 608 608
+#INFO#  small pics num is  467
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-19-18_05_23.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/zhuxiaohui/2018-03-20-15_35_18.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/zhuxiaohui/2018-03-20-15_35_18.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_23_22.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-18_23_22.tif
+################### big_count is  1
+################### small_count is  0
+################### graph num is  54
+################### point num is  54
+# process #  0 / 53 29586 21632 608 608
+#INFO#  small pics num is  53
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-10-18_23_22.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-11-17_52_06.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-11-17_52_06.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-08_53_57.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-08_53_57.tif
+################### big_count is  22
+################### small_count is  19
+################### graph num is  684
+################### point num is  684
+# process #  0 / 683 8549 28958 608 608
+# process #  100 / 683 38570 31339 608 608
+# process #  200 / 683 21719 40638 608 608
+# process #  300 / 683 41045 11355 608 608
+# process #  400 / 683 10644 29630 608 608
+# process #  500 / 683 53391 29156 608 608
+# process #  600 / 683 14778 16596 608 608
+#INFO#  small pics num is  683
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-07-08_53_57.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_20_16.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_20_16.tif
+################### big_count is  1
+################### small_count is  7
+################### graph num is  81
+################### point num is  81
+# process #  0 / 80 44069 36958 608 608
+#INFO#  small pics num is  80
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-10-15_20_16.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-11-24-11_17_03.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-11-24-11_17_03.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-17_01_57.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-17_01_57.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-17_01_57.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-17_01_57.xmlPROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_43_07.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_43_07.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_10_17.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_10_17.tif
+################### big_count is  3
+################### small_count is  0
+################### graph num is  45
+################### point num is  45
+# process #  0 / 44 15807 20380 608 608
+#INFO#  small pics num is  44
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-10-15_10_17.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-16-20_28_46.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-16-20_28_46.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ACTINO/2018-06-20_18_28_33.kfb ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/ACTINO/2018-06-20_18_28_33.kfb
+################### big_count is  42
+################### small_count is  115
+################### graph num is  1602
+################### point num is  1602
+# process #  0 / 1601 27556 48104 608 608
+# process #  100 / 1601 40548 30024 608 608
+# process #  200 / 1601 21259 33367 608 608
+# process #  300 / 1601 13875 27960 608 608
+# process #  400 / 1601 23823 16331 608 608
+# process #  500 / 1601 13497 28324 608 608
+# process #  600 / 1601 40101 45857 608 608
+# process #  700 / 1601 23503 36894 608 608
+# process #  800 / 1601 27866 25574 608 608
+# process #  900 / 1601 10811 24747 608 608
+# process #  1000 / 1601 15762 39448 608 608
+# process #  1100 / 1601 26226 18460 608 608
+# process #  1200 / 1601 45819 24797 608 608
+# process #  1300 / 1601 40282 39481 608 608
+# process #  1400 / 1601 23778 45142 608 608
+# process #  1500 / 1601 36506 36045 608 608
+# process #  1600 / 1601 30967 28374 608 608
+#INFO#  small pics num is  1601
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-06-20_18_28_33.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_58_25.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-10-15_58_25.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-11_29_59.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/ASCUS/2018-03-15-11_29_59.tif
+################### big_count is  1
+################### small_count is  3
+################### graph num is  36
+################### point num is  36
+# process #  0 / 35 50083 25263 608 608
+#INFO#  small pics num is  35
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-03-15-11_29_59.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_41_39.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_41_39.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_41_39.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-09_41_39.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-01-17-11_12_11.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-01-17-11_12_11.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-19_01_07.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-19_01_07.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_12_07.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-11_12_07.tif
+################### big_count is  13
+################### small_count is  42
+################### graph num is  738
+################### point num is  738
+# process #  0 / 737 30937 20906 608 608
+# process #  100 / 737 6397 30613 608 608
+# process #  200 / 737 6067 30613 608 608
+# process #  300 / 737 12312 44464 608 608
+# process #  400 / 737 45535 17541 608 608
+# process #  500 / 737 10379 44749 608 608
+# process #  600 / 737 47008 31672 608 608
+# process #  700 / 737 46617 31856 608 608
+#INFO#  small pics num is  737
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-10-19-11_12_07.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-01-17-10_53_55.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/EC/2018-01-17-10_53_55.tif
+################### big_count is  0
+################### small_count is  0
+################### graph num is  45
+################### point num is  45
+# process #  0 / 44 28222 21824 608 608
+#INFO#  small pics num is  44
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2018-01-17-10_53_55.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-16_19_00.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-16_19_00.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-16_19_00.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-16_19_00.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-20_22_22.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/SCC/2017-09-19-20_22_22.tif
+################### big_count is  7
+################### small_count is  115
+################### graph num is  1116
+################### point num is  1116
+# process #  0 / 1115 14474 21454 608 608
+# process #  100 / 1115 42822 29624 608 608
+# process #  200 / 1115 19284 23380 608 608
+# process #  300 / 1115 40518 46049 608 608
+# process #  400 / 1115 23508 44398 608 608
+# process #  500 / 1115 16616 45119 608 608
+# process #  600 / 1115 10144 45403 608 608
+# process #  700 / 1115 26928 44363 608 608
+# process #  800 / 1115 57947 23892 608 608
+# process #  900 / 1115 35506 41673 608 608
+# process #  1000 / 1115 27281 17334 608 608
+# process #  1100 / 1115 16286 34106 608 608
+#INFO#  small pics num is  1115
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-19-20_22_22.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-18_28_00.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/HSIL/2017-09-07-18_28_00.tif
+################### big_count is  12
+################### small_count is  28
+################### graph num is  765
+################### point num is  762
+# process #  0 / 761 41625 24817 608 608
+# process #  100 / 761 21968 44987 608 608
+# process #  200 / 761 14759 25432 608 608
+# process #  300 / 761 14162 24899 608 608
+# process #  400 / 761 10578 17212 608 608
+# process #  500 / 761 6816 23664 608 608
+# process #  600 / 761 15464 52141 608 608
+# process #  700 / 761 29861 25531 608 608
+#INFO#  small pics num is  761
+#INFO#  processed  /home/static-data/TRAIN_DATA_BIG/20181009/XMLS_SELECTED/2017-09-07-18_28_00.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_12_28.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_12_28.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-09_44_07.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-19-09_44_07.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_14_48.xml ...
+# ERROR # can not find pic  /home/static-data/TRAIN_DATA_BIG/20181009/pic/LSIL/2017-10-09-17_14_48.xml
+PROCESSING /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_21_58.tif ...
+################### tiff_path /home/static-data/TRAIN_DATA_BIG/20181009/pic/TRI/2018-05-08-16_21_58.tif
+################### big_count is  0
+################### small_count is  14
+################### graph num is  126
+################### point num is  126
+# process #  0 / 125 20842 29765 608 608
+# process #  100 / 125 20621 27151 608 608
+#INFO#  small pics num is  125
+#INFO#  processed 
+One Job Done, last Job Count: 548
+One Job Done, last Job Count: 547
+One Job Done, last Job Count: 546
+One Job Done, last Job Count: 545
+One Job Done, last Job Count: 544
+One Job Done, last Job Count: 543
+One Job Done, last Job Count: 542
+One Job Done, last Job Count: 541
+One Job Done, last Job Count: 540
+One Job Done, last Job Count: 539
+One Job Done, last Job Count: 538
+One Job Done, last Job Count: 537
+One Job Done, last Job Count: 536
+One Job Done, last Job Count: 535
+One Job Done, last Job Count: 534
+One Job Done, last Job Count: 533
+One Job Done, last Job Count: 532
+One Job Done, last Job Count: 531
+One Job Done, last Job Count: 530
+One Job Done, last Job Count: 529
+One Job Done, last Job Count: 528
+One Job Done, last Job Count: 527
+One Job Done, last Job Count: 526
+One Job Done, last Job Count: 525
+One Job Done, last Job Count: 524
+One Job Done, last Job Count: 523
+One Job Done, last Job Count: 522
+One Job Done, last Job Count: 521
+One Job Done, last Job Count: 520
+One Job Done, last Job Count: 519
+One Job Done, last Job Count: 518
+One Job Done, last Job Count: 517
+One Job Done, last Job Count: 516
+One Job Done, last Job Count: 515
+One Job Done, last Job Count: 514
+One Job Done, last Job Count: 513
+One Job Done, last Job Count: 512
+One Job Done, last Job Count: 511
+One Job Done, last Job Count: 510
+One Job Done, last Job Count: 509
+One Job Done, last Job Count: 508
+One Job Done, last Job Count: 507
+One Job Done, last Job Count: 506
+One Job Done, last Job Count: 505
+One Job Done, last Job Count: 504
+One Job Done, last Job Count: 503
+One Job Done, last Job Count: 502
+One Job Done, last Job Count: 501
+One Job Done, last Job Count: 500
+One Job Done, last Job Count: 499
+One Job Done, last Job Count: 498
+One Job Done, last Job Count: 497
+One Job Done, last Job Count: 496
+One Job Done, last Job Count: 495
+One Job Done, last Job Count: 494
+One Job Done, last Job Count: 493
+One Job Done, last Job Count: 492
+One Job Done, last Job Count: 491
+One Job Done, last Job Count: 490
+One Job Done, last Job Count: 489
+One Job Done, last Job Count: 488
+One Job Done, last Job Count: 487
+One Job Done, last Job Count: 486
+One Job Done, last Job Count: 485
+One Job Done, last Job Count: 484
+One Job Done, last Job Count: 483
+One Job Done, last Job Count: 482
+One Job Done, last Job Count: 481
+One Job Done, last Job Count: 480
+One Job Done, last Job Count: 479
+One Job Done, last Job Count: 478
+One Job Done, last Job Count: 477
+One Job Done, last Job Count: 476
+One Job Done, last Job Count: 475
+One Job Done, last Job Count: 474
+One Job Done, last Job Count: 473
+One Job Done, last Job Count: 472
+One Job Done, last Job Count: 471
+One Job Done, last Job Count: 470
+One Job Done, last Job Count: 469
+One Job Done, last Job Count: 468
+One Job Done, last Job Count: 467
+One Job Done, last Job Count: 466
+One Job Done, last Job Count: 465
+One Job Done, last Job Count: 464
+One Job Done, last Job Count: 463
+One Job Done, last Job Count: 462
+One Job Done, last Job Count: 461
+One Job Done, last Job Count: 460
+One Job Done, last Job Count: 459
+One Job Done, last Job Count: 458
+One Job Done, last Job Count: 457
+One Job Done, last Job Count: 456
+One Job Done, last Job Count: 455
+One Job Done, last Job Count: 454
+One Job Done, last Job Count: 453
+One Job Done, last Job Count: 452
+One Job Done, last Job Count: 451
+One Job Done, last Job Count: 450
+One Job Done, last Job Count: 449
+One Job Done, last Job Count: 448
+One Job Done, last Job Count: 447
+One Job Done, last Job Count: 446
+One Job Done, last Job Count: 445
+One Job Done, last Job Count: 444
+One Job Done, last Job Count: 443
+One Job Done, last Job Count: 442
+One Job Done, last Job Count: 441
+One Job Done, last Job Count: 440
+One Job Done, last Job Count: 439
+One Job Done, last Job Count: 438
+One Job Done, last Job Count: 437
+One Job Done, last Job Count: 436
+One Job Done, last Job Count: 435
+One Job Done, last Job Count: 434
+One Job Done, last Job Count: 433
+One Job Done, last Job Count: 432
+One Job Done, last Job Count: 431
+One Job Done, last Job Count: 430
+One Job Done, last Job Count: 429
+One Job Done, last Job Count: 428
+One Job Done, last Job Count: 427
+One Job Done, last Job Count: 426
+One Job Done, last Job Count: 425
+One Job Done, last Job Count: 424
+One Job Done, last Job Count: 423
+One Job Done, last Job Count: 422
+One Job Done, last Job Count: 421
+One Job Done, last Job Count: 420
+One Job Done, last Job Count: 419
+One Job Done, last Job Count: 418
+One Job Done, last Job Count: 417
+One Job Done, last Job Count: 416
+One Job Done, last Job Count: 415
+One Job Done, last Job Count: 414
+One Job Done, last Job Count: 413
+One Job Done, last Job Count: 412
+One Job Done, last Job Count: 411
+One Job Done, last Job Count: 410
+One Job Done, last Job Count: 409
+One Job Done, last Job Count: 408
+One Job Done, last Job Count: 407
+One Job Done, last Job Count: 406
+One Job Done, last Job Count: 405
+One Job Done, last Job Count: 404
+One Job Done, last Job Count: 403
+One Job Done, last Job Count: 402
+One Job Done, last Job Count: 401
+One Job Done, last Job Count: 400
+One Job Done, last Job Count: 399
+One Job Done, last Job Count: 398
+One Job Done, last Job Count: 397
+One Job Done, last Job Count: 396
+One Job Done, last Job Count: 395
+One Job Done, last Job Count: 394
+One Job Done, last Job Count: 393
+One Job Done, last Job Count: 392
+One Job Done, last Job Count: 391
+One Job Done, last Job Count: 390
+One Job Done, last Job Count: 389
+One Job Done, last Job Count: 388
+One Job Done, last Job Count: 387
+One Job Done, last Job Count: 386
+One Job Done, last Job Count: 385
+One Job Done, last Job Count: 384
+One Job Done, last Job Count: 383
+One Job Done, last Job Count: 382
+One Job Done, last Job Count: 381
+One Job Done, last Job Count: 380
+One Job Done, last Job Count: 379
+One Job Done, last Job Count: 378
+One Job Done, last Job Count: 377
+One Job Done, last Job Count: 376
+One Job Done, last Job Count: 375
+One Job Done, last Job Count: 374
+One Job Done, last Job Count: 373
+One Job Done, last Job Count: 372
+One Job Done, last Job Count: 371
+One Job Done, last Job Count: 370
+One Job Done, last Job Count: 369
+One Job Done, last Job Count: 368
+One Job Done, last Job Count: 367
+One Job Done, last Job Count: 366
+One Job Done, last Job Count: 365
+One Job Done, last Job Count: 364
+One Job Done, last Job Count: 363
+One Job Done, last Job Count: 362
+One Job Done, last Job Count: 361
+One Job Done, last Job Count: 360
+One Job Done, last Job Count: 359
+One Job Done, last Job Count: 358
+One Job Done, last Job Count: 357
+One Job Done, last Job Count: 356
+One Job Done, last Job Count: 355
+One Job Done, last Job Count: 354
+One Job Done, last Job Count: 353
+One Job Done, last Job Count: 352
+One Job Done, last Job Count: 351
+One Job Done, last Job Count: 350
+One Job Done, last Job Count: 349
+One Job Done, last Job Count: 348
+One Job Done, last Job Count: 347
+One Job Done, last Job Count: 346
+One Job Done, last Job Count: 345
+One Job Done, last Job Count: 344
+One Job Done, last Job Count: 343
+One Job Done, last Job Count: 342
+One Job Done, last Job Count: 341
+One Job Done, last Job Count: 340
+One Job Done, last Job Count: 339
+One Job Done, last Job Count: 338
+One Job Done, last Job Count: 337
+One Job Done, last Job Count: 336
+One Job Done, last Job Count: 335
+One Job Done, last Job Count: 334
+One Job Done, last Job Count: 333
+One Job Done, last Job Count: 332
+One Job Done, last Job Count: 331
+One Job Done, last Job Count: 330
+One Job Done, last Job Count: 329
+One Job Done, last Job Count: 328
+One Job Done, last Job Count: 327
+One Job Done, last Job Count: 326
+One Job Done, last Job Count: 325
+One Job Done, last Job Count: 324
+One Job Done, last Job Count: 323
+One Job Done, last Job Count: 322
+One Job Done, last Job Count: 321
+One Job Done, last Job Count: 320
+One Job Done, last Job Count: 319
+One Job Done, last Job Count: 318
+One Job Done, last Job Count: 317
+One Job Done, last Job Count: 316
+One Job Done, last Job Count: 315
+One Job Done, last Job Count: 314
+One Job Done, last Job Count: 313
+One Job Done, last Job Count: 312
+One Job Done, last Job Count: 311
+One Job Done, last Job Count: 310
+One Job Done, last Job Count: 309
+One Job Done, last Job Count: 308
+One Job Done, last Job Count: 307
+One Job Done, last Job Count: 306
+One Job Done, last Job Count: 305
+One Job Done, last Job Count: 304
+One Job Done, last Job Count: 303
+One Job Done, last Job Count: 302
+One Job Done, last Job Count: 301
+One Job Done, last Job Count: 300
+One Job Done, last Job Count: 299
+One Job Done, last Job Count: 298
+One Job Done, last Job Count: 297
+One Job Done, last Job Count: 296
+One Job Done, last Job Count: 295
+One Job Done, last Job Count: 294
+One Job Done, last Job Count: 293
+One Job Done, last Job Count: 292
+One Job Done, last Job Count: 291
+One Job Done, last Job Count: 290
+One Job Done, last Job Count: 289
+One Job Done, last Job Count: 288
+One Job Done, last Job Count: 287
+One Job Done, last Job Count: 286
+One Job Done, last Job Count: 285
+One Job Done, last Job Count: 284
+One Job Done, last Job Count: 283
+One Job Done, last Job Count: 282
+One Job Done, last Job Count: 281
+One Job Done, last Job Count: 280
+One Job Done, last Job Count: 279
+One Job Done, last Job Count: 278
+One Job Done, last Job Count: 277
+One Job Done, last Job Count: 276
+One Job Done, last Job Count: 275
+One Job Done, last Job Count: 274
+One Job Done, last Job Count: 273
+One Job Done, last Job Count: 272
+One Job Done, last Job Count: 271
+One Job Done, last Job Count: 270
+One Job Done, last Job Count: 269
+One Job Done, last Job Count: 268
+One Job Done, last Job Count: 267
+One Job Done, last Job Count: 266
+One Job Done, last Job Count: 265
+One Job Done, last Job Count: 264
+One Job Done, last Job Count: 263
+One Job Done, last Job Count: 262
+One Job Done, last Job Count: 261
+One Job Done, last Job Count: 260
+One Job Done, last Job Count: 259
+One Job Done, last Job Count: 258
+One Job Done, last Job Count: 257
+One Job Done, last Job Count: 256
+One Job Done, last Job Count: 255
+One Job Done, last Job Count: 254
+One Job Done, last Job Count: 253
+One Job Done, last Job Count: 252
+One Job Done, last Job Count: 251
+One Job Done, last Job Count: 250
+One Job Done, last Job Count: 249
+One Job Done, last Job Count: 248
+One Job Done, last Job Count: 247
+One Job Done, last Job Count: 246
+One Job Done, last Job Count: 245
+One Job Done, last Job Count: 244
+One Job Done, last Job Count: 243
+One Job Done, last Job Count: 242
+One Job Done, last Job Count: 241
+One Job Done, last Job Count: 240
+One Job Done, last Job Count: 239
+One Job Done, last Job Count: 238
+One Job Done, last Job Count: 237
+One Job Done, last Job Count: 236
+One Job Done, last Job Count: 235
+One Job Done, last Job Count: 234
+One Job Done, last Job Count: 233
+One Job Done, last Job Count: 232
+One Job Done, last Job Count: 231
+One Job Done, last Job Count: 230
+One Job Done, last Job Count: 229
+One Job Done, last Job Count: 228
+One Job Done, last Job Count: 227
+One Job Done, last Job Count: 226
+One Job Done, last Job Count: 225
+One Job Done, last Job Count: 224
+One Job Done, last Job Count: 223
+One Job Done, last Job Count: 222
+One Job Done, last Job Count: 221
+One Job Done, last Job Count: 220
+One Job Done, last Job Count: 219
+One Job Done, last Job Count: 218
+One Job Done, last Job Count: 217
+One Job Done, last Job Count: 216
+One Job Done, last Job Count: 215
+One Job Done, last Job Count: 214
+One Job Done, last Job Count: 213
+One Job Done, last Job Count: 212
+One Job Done, last Job Count: 211
+One Job Done, last Job Count: 210
+One Job Done, last Job Count: 209
+One Job Done, last Job Count: 208
+One Job Done, last Job Count: 207
+One Job Done, last Job Count: 206
+One Job Done, last Job Count: 205
+One Job Done, last Job Count: 204
+One Job Done, last Job Count: 203
+One Job Done, last Job Count: 202
+One Job Done, last Job Count: 201
+One Job Done, last Job Count: 200
+One Job Done, last Job Count: 199
+One Job Done, last Job Count: 198
+One Job Done, last Job Count: 197
+One Job Done, last Job Count: 196
+One Job Done, last Job Count: 195
+One Job Done, last Job Count: 194
+One Job Done, last Job Count: 193
+One Job Done, last Job Count: 192
+One Job Done, last Job Count: 191
+One Job Done, last Job Count: 190
+One Job Done, last Job Count: 189
+One Job Done, last Job Count: 188
+One Job Done, last Job Count: 187
+One Job Done, last Job Count: 186
+One Job Done, last Job Count: 185
+One Job Done, last Job Count: 184
+One Job Done, last Job Count: 183
+One Job Done, last Job Count: 182
+One Job Done, last Job Count: 181
+One Job Done, last Job Count: 180
+One Job Done, last Job Count: 179
+One Job Done, last Job Count: 178
+One Job Done, last Job Count: 177
+One Job Done, last Job Count: 176
+One Job Done, last Job Count: 175
+One Job Done, last Job Count: 174
+One Job Done, last Job Count: 173
+One Job Done, last Job Count: 172
+One Job Done, last Job Count: 171
+One Job Done, last Job Count: 170
+One Job Done, last Job Count: 169
+One Job Done, last Job Count: 168
+One Job Done, last Job Count: 167
+One Job Done, last Job Count: 166
+One Job Done, last Job Count: 165
+One Job Done, last Job Count: 164
+One Job Done, last Job Count: 163
+One Job Done, last Job Count: 162
+One Job Done, last Job Count: 161
+One Job Done, last Job Count: 160
+One Job Done, last Job Count: 159
+One Job Done, last Job Count: 158
+One Job Done, last Job Count: 157
+One Job Done, last Job Count: 156
+One Job Done, last Job Count: 155
+One Job Done, last Job Count: 154
+One Job Done, last Job Count: 153
+One Job Done, last Job Count: 152
+One Job Done, last Job Count: 151
+One Job Done, last Job Count: 150
+One Job Done, last Job Count: 149
+One Job Done, last Job Count: 148
+One Job Done, last Job Count: 147
+One Job Done, last Job Count: 146
+One Job Done, last Job Count: 145
+One Job Done, last Job Count: 144
+One Job Done, last Job Count: 143
+One Job Done, last Job Count: 142
+One Job Done, last Job Count: 141
+One Job Done, last Job Count: 140
+One Job Done, last Job Count: 139
+One Job Done, last Job Count: 138
+One Job Done, last Job Count: 137
+One Job Done, last Job Count: 136
+One Job Done, last Job Count: 135
+One Job Done, last Job Count: 134
+One Job Done, last Job Count: 133
+One Job Done, last Job Count: 132
+One Job Done, last Job Count: 131
+One Job Done, last Job Count: 130
+One Job Done, last Job Count: 129
+One Job Done, last Job Count: 128
+One Job Done, last Job Count: 127
+One Job Done, last Job Count: 126
+One Job Done, last Job Count: 125
+One Job Done, last Job Count: 124
+One Job Done, last Job Count: 123
+One Job Done, last Job Count: 122
+One Job Done, last Job Count: 121
+One Job Done, last Job Count: 120
+One Job Done, last Job Count: 119
+One Job Done, last Job Count: 118
+One Job Done, last Job Count: 117
+One Job Done, last Job Count: 116
+One Job Done, last Job Count: 115
+One Job Done, last Job Count: 114
+One Job Done, last Job Count: 113
+One Job Done, last Job Count: 112
+One Job Done, last Job Count: 111
+One Job Done, last Job Count: 110
+One Job Done, last Job Count: 109
+One Job Done, last Job Count: 108
+One Job Done, last Job Count: 107
+One Job Done, last Job Count: 106
+One Job Done, last Job Count: 105
+One Job Done, last Job Count: 104
+One Job Done, last Job Count: 103
+One Job Done, last Job Count: 102
+One Job Done, last Job Count: 101
+One Job Done, last Job Count: 100
+One Job Done, last Job Count: 99
+One Job Done, last Job Count: 98
+One Job Done, last Job Count: 97
+One Job Done, last Job Count: 96
+One Job Done, last Job Count: 95
+One Job Done, last Job Count: 94
+One Job Done, last Job Count: 93
+One Job Done, last Job Count: 92
+One Job Done, last Job Count: 91
+One Job Done, last Job Count: 90
+One Job Done, last Job Count: 89
+One Job Done, last Job Count: 88
+One Job Done, last Job Count: 87
+One Job Done, last Job Count: 86
+One Job Done, last Job Count: 85
+One Job Done, last Job Count: 84
+One Job Done, last Job Count: 83
+One Job Done, last Job Count: 82
+One Job Done, last Job Count: 81
+One Job Done, last Job Count: 80
+One Job Done, last Job Count: 79
+One Job Done, last Job Count: 78
+One Job Done, last Job Count: 77
+One Job Done, last Job Count: 76
+One Job Done, last Job Count: 75
+One Job Done, last Job Count: 74
+One Job Done, last Job Count: 73
+One Job Done, last Job Count: 72
+One Job Done, last Job Count: 71
+One Job Done, last Job Count: 70
+One Job Done, last Job Count: 69
+One Job Done, last Job Count: 68
+One Job Done, last Job Count: 67
+One Job Done, last Job Count: 66Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/concurrent/futures/process.py", line 295, in _queue_management_worker
+    shutdown_worker()
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/concurrent/futures/process.py", line 253, in shutdown_worker
+    call_queue.put_nowait(None)
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/multiprocessing/queues.py", line 129, in put_nowait
+    return self.put(obj, False)
+  File "/home/sakulaki/anaconda3/envs/algo-work/lib/python3.5/multiprocessing/queues.py", line 83, in put
+    raise Full
+queue.Full
+
+
+One Job Done, last Job Count: 65
+One Job Done, last Job Count: 64
+One Job Done, last Job Count: 63
+One Job Done, last Job Count: 62
+One Job Done, last Job Count: 61
+One Job Done, last Job Count: 60
+One Job Done, last Job Count: 59
+One Job Done, last Job Count: 58
+One Job Done, last Job Count: 57
+One Job Done, last Job Count: 56
+One Job Done, last Job Count: 55
+One Job Done, last Job Count: 54
+One Job Done, last Job Count: 53
+One Job Done, last Job Count: 52
+One Job Done, last Job Count: 51
+One Job Done, last Job Count: 50
+One Job Done, last Job Count: 49
+One Job Done, last Job Count: 48
+One Job Done, last Job Count: 47
+One Job Done, last Job Count: 46
+One Job Done, last Job Count: 45
+One Job Done, last Job Count: 44
+One Job Done, last Job Count: 43
+One Job Done, last Job Count: 42
+One Job Done, last Job Count: 41
+One Job Done, last Job Count: 40
+One Job Done, last Job Count: 39
+One Job Done, last Job Count: 38
+One Job Done, last Job Count: 37
+One Job Done, last Job Count: 36
+One Job Done, last Job Count: 35
+One Job Done, last Job Count: 34
+One Job Done, last Job Count: 33
+One Job Done, last Job Count: 32
+One Job Done, last Job Count: 31
+One Job Done, last Job Count: 30
+One Job Done, last Job Count: 29
+One Job Done, last Job Count: 28
+One Job Done, last Job Count: 27
+One Job Done, last Job Count: 26
+One Job Done, last Job Count: 25
+One Job Done, last Job Count: 24
+One Job Done, last Job Count: 23
+One Job Done, last Job Count: 22
+One Job Done, last Job Count: 21
+One Job Done, last Job Count: 20
+One Job Done, last Job Count: 19
+One Job Done, last Job Count: 18
+One Job Done, last Job Count: 17
+One Job Done, last Job Count: 16
+One Job Done, last Job Count: 15
+One Job Done, last Job Count: 14
+One Job Done, last Job Count: 13
+One Job Done, last Job Count: 12
+One Job Done, last Job Count: 11
+One Job Done, last Job Count: 10
+One Job Done, last Job Count: 9
+One Job Done, last Job Count: 8
+One Job Done, last Job Count: 7
+One Job Done, last Job Count: 6
+One Job Done, last Job Count: 5
+One Job Done, last Job Count: 4
+One Job Done, last Job Count: 3
+One Job Done, last Job Count: 2
+One Job Done, last Job Count: 1
+One Job Done, last Job Count: 0
+#INFO#  end cut cell
+all cost time:  234
+cell cut cost time:  225
+enhance cost time:  0
+txt gen cost time:  8

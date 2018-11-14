@@ -41,10 +41,15 @@ def scan_files(directory, prefix=None, postfix=None):
 #          "#aa55ff": "EC", "#ff5500": "AGC1", "#ff557f": "AGC2", "#ff55ff": "AGC3", "#00aa00": "FUNGI",
 #          "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
 
-classes = {"#aa0000": "HSIL", "#aa007f": "ASCH",
-          "#005500": "LSIL", "#00557f": "ASCUS", "#0055ff": "SCC",
+#classes = {"#aa0000": "HSIL", "#aa007f": "ASCH",
+#          "#005500": "LSIL", "#00557f": "ASCUS", "#0055ff": "SCC",
+#          "#aa55ff": "EC", "#ff5500": "AGC", "#00aa00": "FUNGI",
+#          "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
+
+classes = {"#aa0000": "HSIL", "#005500": "LSIL", "#0055ff": "SCC",
           "#aa55ff": "EC", "#ff5500": "AGC", "#00aa00": "FUNGI",
           "#00aa7f": "TRI", "#00aaff": "CC", "#55aa00": "ACTINO", "#55aa7f": "VIRUS"}
+
 
 # get coordinates of labels in a xml
 def get_labels(xml_file):
@@ -319,8 +324,9 @@ def cell_sampling(xml_file, tiff_path, save_path, size):
             slide = openslide.OpenSlide(tiff_path)
         except:
             slide = TSlide(tiff_path)
-    except:
+    except Exception as e:
         print("ERROR #", "can not open pic ", tiff_path)
+        print(e)
         exit()
 
     size_x, size_y = slide.dimensions
